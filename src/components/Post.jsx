@@ -27,7 +27,8 @@ export function Post(props) {
           👉🏻 <a href="#">cassiano.dev/ignite</a>
         </p>
         <p>
-          <a href="#">#novoprojeto #nlw # rocketseat</a>
+          <a href="#">#novoprojeto</a> <a href="#">#nlw</a>{" "}
+          <a href="#">#rocketseat</a>
         </p>
       </div>
     </article>
