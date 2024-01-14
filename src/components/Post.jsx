@@ -8,10 +8,7 @@ export function Post(props) {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar
-            hasBorder
-            src="https://avatars.githubusercontent.com/u/42375242?v=4"
-          />
+          <Avatar src="https://avatars.githubusercontent.com/u/42375242?v=4" />
           <div className={styles.authorInfo}>
             <strong>Cassiano Tadao Yasumitsu</strong>
             <span>Web Developer</span>
