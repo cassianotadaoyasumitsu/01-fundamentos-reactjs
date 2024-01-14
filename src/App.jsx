@@ -1,8 +1,13 @@
 import { Post } from "./Post";
+import { Header } from "./components/Header";
+
+import "./styles.css";
 
 export function App() {
   return (
     <div>
+      <Header />
+
       <Post
         author="Cassiano Tadao Yasumitsu"
         content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad perspiciatis, eum eveniet voluptatibus, deserunt reprehenderit magnam eligendi ex totam iusto asperiores, ducimus dolore nobis fugiat! Ea odit sit provident harum?"
