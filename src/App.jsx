@@ -1,21 +1,29 @@
 import { Post } from "./Post";
 import { Header } from "./components/Header";
 
+import styles from "./App.module.css";
+
 import "./global.css";
+import { Sidebar } from "./components/Sidebar";
 
 export function App() {
   return (
     <div>
       <Header />
 
-      <Post
-        author="Cassiano Tadao Yasumitsu"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad perspiciatis, eum eveniet voluptatibus, deserunt reprehenderit magnam eligendi ex totam iusto asperiores, ducimus dolore nobis fugiat! Ea odit sit provident harum?"
-      />
-      <Post
-        author="Carise Yasumitsu"
-        content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad perspiciatis, eum eveniet voluptatibus, deserunt reprehenderit magnam eligendi ex totam iusto asperiores, ducimus dolore nobis fugiat! Ea odit sit provident harum?"
-      />
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>
+          <Post
+            author="Cassiano Tadao Yasumitsu"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          />
+          <Post
+            author="Cassiano Tadao Yasumitsu"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
+          />
+        </main>
+      </div>
     </div>
   );
 }
